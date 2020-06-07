@@ -1,0 +1,99 @@
+1.Sub Procedure -
+
+Public Sub LoopProcedure()
+
+End Sub
+
+2.Variables -
+
+Dim i As Integer
+Dim j As String
+i = 15
+j = "HI"
+(Dim short for dimension)
+
+3.Loops -
+
+Do While i <= 10
+
+Loop
+
+4.Statment (If ) -
+
+If ActiveCell.Value > 15 Then
+
+ElseIf
+
+Else
+
+End If
+
+Example - 
+
+Public Sub LoopProcedure()
+    
+    Dim i As Integer    
+    i = 1
+    
+    Do While i <= 27
+        
+	If ActiveCell.Value > 15 Then
+            ActiveCell.Interior.Color = RGB(222, 234, 111)
+        End If
+        
+            ActiveCell.Offset(1, 0).Select            
+            i = i + 1
+    
+    Loop
+
+End Sub
+
+6.User Input - inputbox()
+inputbox()
+Dim 
+userInput = InputBox(promptMSG)
+
+7.Concatinating or combine
+&
+
+8. vbcrlf - carriage return line feed
+
+9. Message - MsgBox()
+	MsgBox ("Message", Buttons)
+Dim try as Integer
+try = MsgBox(" Try again ?", vbYesNo)
+
+'msg box a yes ar value 6
+'msg box a no ar value 7
+
+10. Range - 
+	Range("F").Select
+
+11.Go down, Find data & Select  Last Cell -
+	Selection.End(xlDown).Select
+
+12.Go up, Find data & Select Cell -
+	Selection.End(xlUp).Select
+
+13. Address of a Cell -
+ Dim AnyCell As String
+ AnyCell = ActiveCell.Address(False, False)
+
+14. Copy data - .Copy
+	Range("A1").Select
+        Selection.CurrentRegion.Select
+        Selection.Copy
+
+15. Paste the data - .Paste
+        ActiveSheet.Paste
+
+16. 
+
+
+
+
+
+
+
+
+
